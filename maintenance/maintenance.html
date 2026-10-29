@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance | Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* Applied Portfolio Background Gradient Scheme */
+            background: #0e0e10;
+            background: linear-gradient(180deg, #0e0e10 0%, #1a1a20 100%);
+            /* Applied Stark High-Contrast Primary Typography Color */
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .maintenance-card {
+            background: transparent;
+            border: none;
+            padding: 0;
+            max-width: 480px;
+            width: 100%;
+            box-shadow: none;
+        }
+
+        .icon-wrapper {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 2rem;
+            color: #ffffff;
+        }
+
+        .icon-wrapper svg {
+            width: 40px;
+            height: 40px;
+            fill: currentColor;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        p {
+            font-size: 1.1rem;
+            color: #a1a1aa;
+            margin-bottom: 2.5rem;
+            line-height: 1.5;
+        }
+
+        .action-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        /* Stripped button styling, mapped to a clean minimalistic text link with an inline arrow */
+        .return-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #a1a1aa;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            padding: 0.5rem 0;
+            transition: color 0.2s ease;
+        }
+
+        .return-btn svg {
+            width: 16px;
+            height: 16px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transition: transform 0.2s ease;
+        }
+
+        /* Sleek hover state shifting color and sliding the arrow forward */
+        .return-btn:hover {
+            color: #ffffff;
+        }
+
+        .return-btn:hover svg {
+            transform: translateX(4px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="maintenance-card">
+        <div class="icon-wrapper">
+            <svg xmlns="http://w3.org" viewBox="0 0 24 24">
+                <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
+            </svg>
+        </div>
+        <h1>Maintenance Under Progress</h1>
+        <p>Maybe drop by later.</p>
+        
+        <div class="action-wrapper">
+            <a href="../index.html" class="return-btn">
+                Return 
+                <svg xmlns="http://w3.org" viewBox="0 0 24 24">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

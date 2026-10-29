@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <script src=".\assets\infoGraphics\chart\chart.umd.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Desktop Navigation Ribbon Overlay -->
+    <nav class="top-ribbon">
+        <div class="nav-container">
+            <ul class="nav-tabs">
+                <li><a href="#home" class="tab-link active">Home</a></li>
+                <li><a href="#about" class="tab-link">About</a></li>
+                <li><a href="#projects" class="tab-link">Projects</a></li>
+                <li><a href="#contact" class="tab-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Drawer Shell -->
+    <div id="mobileDrawer" class="mobile-drawer">
+        <ul class="drawer-tabs">
+            <li><a href="#home" class="drawer-link">Home</a></li>
+            <li><a href="#about" class="drawer-link">About Me</a></li>
+            <li><a href="#projects" class="drawer-link">Projects</a></li>
+            <li><a href="#contact" class="drawer-link">Contact</a></li>
+        </ul>
+    </div>
+    <div id="drawerOverlay" class="mobile-drawer-overlay"></div>
+    <div id="menuToggle" class="mobile-menu-btn">
+        <span></span><span></span><span></span>
+    </div>
+
+    <!-- MAIN HERO LAYOUT CONTAINER -->
+    <main class="hero-wrapper" id="home">
+        <div class="hero-bg-graphic"></div>
+        <div class="hero-content-block">
+            <div class="hero-text">
+                <h1 class="quote-text">“YOU DO NOT FIND A HAPPY LIFE. YOU MAKE IT.”</h1>
+                <span class="username">Anonymous</span>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bouncing Navigation Arrow -->
+    <div class="scroll-down-arrow" id="scrollArrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+    </div>
+
+    <!-- CONTENT MODULE SECTIONS -->
+    <section id="about" class="content-section about-fluid-viewport">
+    <!-- Left Side: Full-Height Visual Component (40% Width Allocation) -->
+    <div class="about-image-lens">
+        <!-- Reuses your profile picture or background graphic -->
+        <img src=".\assets\images\pan.jpg" class="about-hero-img" alt="Profile Visual">
+        <div class="about-image-overlay"></div>
+    </div>
+    
+    <!-- Right Side: Consistent Text Container (60% Width Allocation) -->
+    <div class="about-text-panel">
+        <div class="about-text-content">
+            <h2>About Me</h2>
+            <div class="header-divider-line"></div>
+            
+            <p class="about-description">
+My name is Tanishq Maurya. A thinker, improviser, pragmatist and stubborn learner who thrives at the intersection of logic and creativity. Discovering new ways to learn, grow and fuel my intellectual appetite in this ever-increasing stochastic world, engineering my way out of the technical and everyday mess.            </p>
+        </div>
+    </div>
+</section>
+
+    <section class="content-section" id="projects">
+        <div class="section-core-canvas">
+        <h2>Projects</h2>
+        <div class="projects-split-layout">
+            
+            <!-- Left Box (Desktop) / Top Box (Mobile): Bubble Engine -->
+            <div class="bubble-container" id="bubbleContainer"></div>
+            
+            <!-- Right Box (Desktop) / Bottom Box (Mobile): Project Dynamic Content Showcase -->
+            <div class="project-data-showcase">
+                <!-- JavaScript handles this text area dynamically -->
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <section id="archives" class="content-section archives-fluid-viewport">
+    <!-- Left Half: Full-Height Image Slider Component -->
+    <div class="archive-image-lens">
+        <div class="archive-slide-overlay">
+       <div class="chart-container" id="chartContainer">
+    <canvas id="engineeringMatrixChart"></canvas>
+        </div>
+        </div>
+    </div>
+    
+    <!-- Right Half: Sleek Left-Aligned Typography Container -->
+    <div class="archive-text-panel">
+        <div class="archive-text-content">
+            <h2>Know More</h2>
+            <div class="header-divider-line"></div>
+            <ul class="archive-list-features">
+                <li><span>✓</span> Highly resourceful, efficent and handy with data.</li>
+                <li><span>✓</span> Practical, diplomatic and stubborn in wake of crisis.</li>
+                <li><span>✓</span> Perfectionist and micro-management maniac.</li>
+                <li><span>✓</span> And, yes the infographic is interactable.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="content-section" id="contact">
+  <!-- Reusing your exact .projects-split-layout grid class here -->
+  <div class="projects-split-layout">
+    
+    <!-- Left Column: Title and Text -->
+    <div class="contact-text-column">
+      <h2 class="contact-heading">Contact</h2>
+      <p class="contact-description">Feel free to get in touch or reach out to me at social networks.</p>
+    </div>
+
+    <!-- Right Column: Icons Grouped Together -->
+    <div class="contact-icons-column">
+      <!-- Email Icon -->
+      <a href="mailto:workspacetnshq@gmail.com" aria-label="Email" class="contact-icon-link email-link">
+        <svg xmlns="http://w3.org" viewBox="0 0 24 24" class="contact-svg stroke-icon">
+          <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+          <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+        </svg>
+      </a>
+
+      <!-- LinkedIn Icon -->
+      <a href="https://www.linkedin.com/in/tanishq-maurya/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="contact-icon-link linkedin-link">
+        <svg xmlns="http://w3.org" viewBox="0 0 24 24" class="contact-svg fill-icon">
+          <circle cx="4.98" cy="4.02" r="2.5"></circle>
+          <rect x="2.5" y="9" width="5" height="13"></rect>
+          <path d="M21.5 22h-5v-7c0-2-1.5-2.5-2-2.5s-2.5.5-2.5 2.5v7h-5V9h5v1.5c1-1.5 2.5-2 4-2 3.5 0 5.5 2.5 5.5 6.5v7z"></path>
+        </svg>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+    <script src="script.js"></script>
+    <script src=".\assets\infoGraphics\chart\script.js"></script>
+</body>
+</html>
